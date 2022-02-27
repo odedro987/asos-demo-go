@@ -11,6 +11,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/home', (req, res) => {
+  res.render('landing');
+});
+
+app.get('*', (req, res) => {
+  res.redirect('/home');
+});
+
 app.listen(3000, () => {
   console.log('Serving on port 3000!');
 });
