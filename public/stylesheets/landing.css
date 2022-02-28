@@ -4,16 +4,16 @@
   position: absolute;
   top: 65%;
 }
+
 .landing-image-subtext {
   position: absolute;
   top: 85%;
   background-color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.575rem 0.875rem;
   letter-spacing: 0.2rem;
   color: black;
 }
 
 .landing-image {
-  width: 1258px;
-  height: 600px;
+  width: 66%;
 }
