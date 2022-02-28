@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 my-0" id="navbar">
   <div class="container-fluid d-flex justify-content-center">
     <a class="navbar-brand" href="#"><svg class="_2M1Oheb" width="104" height="30" viewBox="0 0 104 30" role="img" aria-labelledby="home-logo">
         <title id="home-logo">ASOS logo, back to the Home Page</title>
@@ -6,15 +6,15 @@
       </svg></a>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link fw-bold active fs-5 ps-3" aria-current="page" href="#">WOMEN</a>
+        <a class="nav-link fw-bold active fs-5 px-4 py-3 my-0 navbar-item" id="category-women" aria-current="page" href="#">WOMEN</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fw-bold active fs-5 px-3" href="#">MEN</a>
+        <a class="nav-link fw-bold active fs-5 px-4 py-3 my-0 navbar-item category--active" id="category-men" href="#">MEN</a>
       </li>
     </ul>
 
     <form class="d-flex navbar-margin form-width">
-      <input class="form-control rounded-pill " type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control rounded-pill" type="search" placeholder="Search" aria-label="Search">
     </form>
 
     <ul class="navbar-nav mb-2 mb-lg-0">
@@ -27,7 +27,21 @@
       <li class="nav-item">
         <a class="nav-link mx-1" href="#"><i class="bi bi-bag-fill navbar-icons-color"></i></a>
       </li>
+    </ul>
+  </div>
+</nav>
+<% const categories = ['Sale', 'New in', 'Clothing', 'Shoes', 'Sportswear', 'Accessories', 'Trending now', 'Topman', 'Face + Body', 'Brands', 'Outlet', 'Marketpalce']%>
 
+
+
+<nav class="navbar navbar-expand-lg navbar-dark py-0" id="subbar">
+  <div class="container-fluid d-flex justify-content-center subbar-color">
+    <ul class="navbar-nav">
+      <% for(let i=0; i<categories.length; i++){%>
+      <li class="nav-item">
+        <a class="nav-link py-3 active subbar-item" href="#"><%=categories[i]%></a>
+      </li>
+      <%}%>
     </ul>
   </div>
 </nav>

@@ -11,3 +11,20 @@
 .form-width {
   width: 35%;
 }
+
+.navbar-item:hover {
+  background-color: #474747;
+}
+
+#navbar .category--active {
+  background-color: #525050;
+}
+
+.subbar-color {
+  background-color: #525050;
+}
+
+#subbar .subbar-item:hover {
+  background-color: #eee;
+  color: black;
+}
