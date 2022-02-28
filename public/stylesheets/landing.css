@@ -1,22 +1,19 @@
-.promotion--light {
-  background-color: rgb(156, 240, 224);
-  font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+.landing-image-text {
+  color: white;
+  font-size: 3.5rem;
+  position: absolute;
+  top: 65%;
 }
-.promotion--dark {
-  background-color: black;
-  font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+.landing-image-subtext {
+  position: absolute;
+  top: 85%;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.2rem;
+  color: black;
 }
 
-.promotion--light a {
-  color: black;
-  font-weight: 700;
-  padding: 0.75rem 0;
-}
-.promotion--dark a {
-  color: white;
-  font-weight: 700;
-  padding: 0.75rem 0;
-}
-.promotion-terms {
-  font-size: 0.75rem;
+.landing-image {
+  width: 1258px;
+  height: 600px;
 }
