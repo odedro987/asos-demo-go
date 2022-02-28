@@ -8,3 +8,5 @@ function selectedCategory() {
 
 categoryMen.addEventListener('click', selectedCategory);
 categoryWomen.addEventListener('click', selectedCategory);
+
+const searchBar = document.querySelector('#searchBar');
