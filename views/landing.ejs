@@ -19,13 +19,51 @@
 
   <%- include ./partials/mainpromos%>
 
-  <div class="container-fluid d-flex flex-column align-items-center position-relative">
+  <%  const imageData = [{
+        src: 'https://content.asos-media.com/-/media/homepages/mw/2022/feb/28/moments/mw_puma_moment_870x1110.jpg',
+        text: 'PUMA',
+        subtext: 'Tailoring, but make it sporty',
+      },
+      {
+        src: 'https://content.asos-media.com/-/media/homepages/mw/2022/feb/28/moments/mw_prom_moment_870x1110.jpg',
+        text: 'EVENT READY',
+        subtext: 'Find something suit-able',
+      },
+      {
+        src: 'https://content.asos-media.com/-/media/homepages/mw/2022/feb/28/moments/mw_nike_running_moment_870x1110.jpg',
+        text: 'NIKE RUNNING',
+        subtext: 'Speed AND style',
+      },
+      {
+        src: 'https://content.asos-media.com/-/media/homepages/mw/2022/feb/28/moments/mw_vintage_supply_moment_870x1110.jpg',
+        text: 'VINTAGE SUPPLY',
+        subtext: 'Retro reccos',
+      },
+];%>
+
+
+  <div class="container-fluid d-flex flex-column align-items-center position-relative mb-5">
     <img class="landing-image" src="https://content.asos-media.com/-/media/homepages/mw/2022/feb/28/hero/mw_denim_desktophero_1258x600.jpg" alt="">
     <h2 class="landing-image-text fw-bolder">The denim refresh</h2>
     <a class="landing-image-subtext text-decoration-none fw-bold">SHOP ASOS DESIGN JEANS</a>
   </div>
 
 
+  <div class="d-flex justify-content-center">
+    <div class="row image-container">
+      <% for(let i=0; i<imageData.length; i++){ %>
+      <div class="col gx-3">
+        <a href="" class="text-decoration-none image-container-text">
+          <img class="w-100" src="<%=imageData[i].src%>" alt="">
+          <div class="d-flex flex-column align-items-center justify-content-center mt-3">
+            <p class="fw-bold"><%=imageData[i].text%></p>
+            <p><%=imageData[i].subtext%></p>
+          </div>
+        </a>
+      </div>
+      <%}%>
+  </div>
+  </div>
 
 
 

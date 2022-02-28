@@ -17,3 +17,15 @@
 .landing-image {
   width: 66%;
 }
+
+.image-container {
+  width: 66%;
+}
+
+.image-container-text {
+  color: black;
+}
+
+.image-container-text:hover {
+  color: inherit;
+}
