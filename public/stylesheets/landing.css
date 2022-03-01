@@ -29,3 +29,17 @@
 .image-container-text:hover {
   color: inherit;
 }
+
+.dual-image {
+  width: 52.5%;
+}
+
+.dual-image-subtext {
+  letter-spacing: 0.05rem;
+}
+
+.dual-image-shopbtn:hover {
+  background-color: black;
+  color: white;
+  transition: ease-in 0.2s;
+}
