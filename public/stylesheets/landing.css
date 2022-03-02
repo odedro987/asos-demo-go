@@ -43,3 +43,21 @@
   color: white;
   transition: ease-in 0.2s;
 }
+
+.brand-image-item {
+  width: 15%;
+}
+
+.fader {
+  opacity: 0.3;
+}
+
+#brand-image-container:hover > * {
+  opacity: 0.5;
+  transition: ease-in 0.5s;
+}
+
+#brand-image-container:hover > *:hover {
+  opacity: 1;
+  transition: ease-in 0.5s;
+}
