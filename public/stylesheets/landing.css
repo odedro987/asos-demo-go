@@ -48,10 +48,6 @@
   width: 15%;
 }
 
-.fader {
-  opacity: 0.3;
-}
-
 #brand-image-container:hover > * {
   opacity: 0.5;
   transition: ease-in 0.5s;
@@ -60,4 +56,14 @@
 #brand-image-container:hover > *:hover {
   opacity: 1;
   transition: ease-in 0.5s;
+}
+
+/* footer css */
+.payment-item {
+  width: 2rem;
+  height: 1.25rem;
+}
+
+.socials-item {
+  font-size: 1.9rem;
 }
