@@ -20,35 +20,37 @@
   <%- include ./partials/mainpromos%>
 
   <%  const imageData = [{
-        src: 'https://content.asos-media.com/-/media/homepages/mw/2022/feb/28/moments/mw_puma_moment_870x1110.jpg',
-        text: 'PUMA',
-        subtext: 'Tailoring, but make it sporty',
-      },
-      {
-        src: 'https://content.asos-media.com/-/media/homepages/mw/2022/feb/28/moments/mw_prom_moment_870x1110.jpg',
-        text: 'EVENT READY',
-        subtext: 'Find something suit-able',
-      },
-      {
-        src: 'https://content.asos-media.com/-/media/homepages/mw/2022/feb/28/moments/mw_nike_running_moment_870x1110.jpg',
-        text: 'NIKE RUNNING',
-        subtext: 'Speed AND style',
-      },
-      {
-        src: 'https://content.asos-media.com/-/media/homepages/mw/2022/feb/28/moments/mw_vintage_supply_moment_870x1110.jpg',
-        text: 'VINTAGE SUPPLY',
-        subtext: 'Retro reccos',
-      },
-];%>
+    src: 'https://content.asos-media.com/-/media/homepages/mw/2022/feb/28/moments/mw_puma_moment_870x1110.jpg',
+    text: 'PUMA',
+    subtext: 'Tailoring, but make it sporty',
+  },
+  {
+    src: 'https://content.asos-media.com/-/media/homepages/mw/2022/feb/28/moments/mw_prom_moment_870x1110.jpg',
+    text: 'EVENT READY',
+    subtext: 'Find something suit-able',
+  },
+  {
+    src: 'https://content.asos-media.com/-/media/homepages/mw/2022/feb/28/moments/mw_nike_running_moment_870x1110.jpg',
+    text: 'NIKE RUNNING',
+    subtext: 'Speed AND style',
+  },
+  {
+    src: 'https://content.asos-media.com/-/media/homepages/mw/2022/feb/28/moments/mw_vintage_supply_moment_870x1110.jpg',
+    text: 'VINTAGE SUPPLY',
+    subtext: 'Retro reccos',
+  },
+  ];%>
+  <% const brandImages = ['https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/tommy-hilfiger-hp-logos-256x256.jpg', 'https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/north-face.png', 'https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg', 'https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/carhartt-hp-logos-256x256.jpg', 'https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/ellesse-hp-logos-256x256.jpg', 'https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/dr-martens-hp-logos-256x256.jpg'] %>
 
 
+  <!-- big promo image -->
   <div class="container-fluid d-flex flex-column align-items-center position-relative mb-5">
     <img class="landing-image" src="https://content.asos-media.com/-/media/homepages/mw/2022/feb/28/hero/mw_denim_desktophero_1258x600.jpg" alt="">
     <h2 class="landing-image-text fw-bolder">The denim refresh</h2>
     <a class="landing-image-subtext text-decoration-none fw-bold">SHOP ASOS DESIGN JEANS</a>
   </div>
 
-
+  <!-- 4 promo images -->
   <div class="d-flex justify-content-center mb-5">
     <div class="row image-container">
       <% for(let i=0; i<imageData.length; i++){ %>
@@ -65,6 +67,7 @@
   </div>
   </div>
 
+  <!-- 2 big promo images -->
   <div class="row d-flex justify-content-center gx-0 mb-5">
 
   <div href="" class="col-6 d-flex justify-content-end align-items-center pe-4">
@@ -100,113 +103,29 @@
       </div>
     </a>
   </div>
-</div>
 
-      <% const brandImages = ['https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/tommy-hilfiger-hp-logos-256x256.jpg', 'https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/north-face.png', 'https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg', 'https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/carhartt-hp-logos-256x256.jpg', 'https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/ellesse-hp-logos-256x256.jpg', 'https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/dr-martens-hp-logos-256x256.jpg'] %>
-      <div class="d-flex justify-content-center">
-        <p class="fs-4 fw-bolder">TRENDING BRANDS</p>
-      </div>
-      <section class="container d-flex justify-content-center mb-5">
-        <div id="brand-image-container" class="row gx-0 d-flex justify-content-center">
-          <% for(let j=0; j<brandImages.length; j++){%>
-          <a class="col-2 brand-image-item" href=""><img class="w-100" src="<%=brandImages[j]%>" alt=""></a>
-          <%} %>
-        </div>
-      </section>
-
-
-      <footer class="border-top pt-2">
-
-        <div class="row gx-0 py-2">
-
-          <div class="col-6 pe-1">
-            <div class="d-flex justify-content-end pe-4">
-              <a class="px-4" href="">
-                <i class="bi bi-facebook socials-item"></i>
-              </a>
-              <a class="px-4" href="">
-                <i class="bi bi-instagram socials-item"></i>
-              </a>
-              <a class="px-4" href="">
-                <i class="bi bi-snapchat socials-item"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-6 d-flex align-items-center">
-            <div class="d-flex justify-content-start">
-              <div class="px-3 ps-5 border-start "><img class="payment-item" src=" https://images.asos-media.com/navigation/visa-png" alt=""></div>
-              <div class="px-3"><img class="payment-item" src="https://images.asos-media.com/navigation/american-express-png" alt=""></div>
-              <div class="px-3"><img class="payment-item" src="https://images.asos-media.com/navigation/mastercard-png" alt=""></div>
-              <div class="px-3"><img class="payment-item" src="https://images.asos-media.com/navigation/visa-electron-png" alt=""></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row p-5 gx-0 footer-links">
-          <div class="col-2 offset-2 d-flex flex-column">
-            <div>
-              <p class="footer-links-header fw-bolder">HELP & INFORMATION</p>
-            </div>
-            <div class="d-flex flex-column footer-links-container">
-              <a href="">Help</a>
-              <a href="">Track order</a>
-              <a href="">Delivery & returns</a>
-            </div>
-          </div>
-          <div class="col-2">
-            <div>
-              <p class="footer-links-header fw-bolder">ABOUT ASOS</p>
-            </div>
-            <div class="d-flex flex-column footer-links-container">
-              <a href="">About us</a>
-              <a href="">Careers at ASOS</a>
-              <a href="">Corporate responsibility</a>
-              <a href="">Investors' site</a>
-            </div>
-          </div>
-          <div class="col-2">
-            <div>
-              <p class="footer-links-header fw-bolder">MORE FROM ASOS</p>
-            </div>
-            <div class="d-flex flex-column footer-links-container">
-              <a href="">Mobile and ASOS apps</a>
-              <a href="">ASOS Marketplace</a>
-              <a href="">Gift vouchers</a>
-              <a href="">Black Friday</a>
-            </div>
-          </div>
-          <div class="col-2">
-            <div>
-              <p class="footer-links-header fw-bolder">SHOPPING FROM:</p>
-            </div>
-            <div class="d-flex flex-column footer-links-container">
-              <a href=""> You're in CT <span class="fw-bold footer-links-country">| CHANGE</span></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-terms">
-          <div class="footer-terms-wrapper border-top d-flex justify-content-between align-items-center me-auto ms-auto">
-            <p class="my-0">&copy; 2022 EYLON</p>
-            <ul class="footer-terms-links d-flex justify-content-center align-items-center my-0">
-              <li href=""><a href="">Privacy & Cookies</a></li>
-              <li class="" href=""><a href="">Ts&Cs</a></li>
-              <li href=""><a href="">Accessibility</a></li>
-            </ul>
-          </div>
-        </div>
+  <!-- trending brands -->
+  <div>
+    <div class="d-flex justify-content-center pt-5">
+      <p class="fs-4 fw-bolder">TRENDING BRANDS</p>
+    </div>
+    <section class="container d-flex justify-content-center mb-5">
+      <div id="brand-image-container" class="row gx-0 d-flex justify-content-center">
+        <% for(let j=0; j<brandImages.length; j++){%>
+      <a class="col-2 brand-image-item" href=""><img class="w-100" src="<%=brandImages[j]%>" alt=""></a>
+      <%} %>
+    </div>
+    </section>
+  </div>
 
 
-      </footer>
+  <%- include ./partials/footer %>
 
 
 
 
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-      <script src="/javascripts/navbarLogic.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="/javascripts/navbarLogic.js"></script>
 </body>
 
 </html>
