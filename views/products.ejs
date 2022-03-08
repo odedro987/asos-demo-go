@@ -1,11 +1,80 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<% layout('layout/boilerplate')%>
+<!-- arrownavigation
+category desc
+subcategories
+filters
+matches found >>> products >>> x/matches viewed , load button -->
+
+<!-- arrownav -->
+<div class="arrow-nav-bg">
+  <div class="arrow-nav me-auto ms-auto d-flex justify-content-start align-items-center">
+    <ul class="d-flex justify-content-center mb-0 ">
+      <li><a href="">Home</a></li>
+      <li><span class="px-3">›</span><a href="">categoryName</a></li>
+    </ul>
+  </div>
+</div>
+<!-- category header -->
+<div>
+  <div class="category-banner-bg border-top py-3">
+    <div class="category-banner-wrapper d-flex justify-content-center">
+      <h1 class="my-0">Men's Shoes & Footwear</h1>
+    </div>
+  </div>
+  <!-- desc and sub categories -->
+  <div class="category-desc">
+    <div class="category-desc-bg  border-bottom">
+      <div class="category-desc-wrapper text-center pb-4">
+        <p>Start from the bottom with our edit of men’s shoes. Whether you're looking for a pair of smart boots or casual shoes, find what you're looking for in our men’s footwear collection. Browse ASOS DESIGN for all the latest styles, including men’s casual boots with lace-up designs or high-tops for an elevated everyday look. For men's trainers, check out our selection from adidas Originals for classic styles that'll complement any outfit. Or, for something a little smarter, hit up New Look for loafers and Oxford shoes.</p>
+      </div>
+    </div>
+    <div class="category-buttons-bg py-1">
+      <div class="category-buttons-wrapper d-flex align-items-center justify-content-center">
+        <ul class="d-flex justify-content-center gap-2">
+          <li><button class="btn category-buttons rounded-pill">SHOES</button></li>
+          <li><button class="btn category-buttons rounded-pill">BOOTS</button></li>
+          <li><button class="btn category-buttons rounded-pill">TRAINERS</button></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- filters -->
+<div class="dropdown">
+  <button class="btn dropdown-toggle ddm-toggle border-bottom border-top" type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+    Sort
+  </button>
+  <div class="dropdown-menu p-0 ddm-container" aria-labelledby="dropdownMenu">
+    <div class="ddm-header">
+      <div class="d-flex justify-content-between p-2">
+        <div>
+          <p>0 selected</p>
+        </div>
+        <button class="btn btn-primary me-2">ALL</button>
+      </div>
+      <div class="d-flex justify-content-center w-75 mx-0">
+        <input type="text" class="rounded-pill px-3 w-100">
+      </div>
+    </div>
+    <div class="ddm-list">
+      <ul class="">
+        <li><label for="action" class="px-3 w-100">
+            <div class="h-100 d-flex align-items-center"><span>Action</span></div>
+          </label>
+          <input type="checkbox" class="" href="#" id="action">
+        </li>
+        <li><label for="action" class="px-3 w-100">
+            <div class="h-100 d-flex align-items-center"><span>daniel</span></div>
+          </label>
+          <input type="checkbox" class="" href="#" id="action">
+        </li>
+        <li><label for="action" class="px-3 w-100">
+            <div class="h-100 d-flex align-items-center"><span>oded</span></div>
+          </label>
+          <input type="checkbox" class="" href="#" id="action">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
