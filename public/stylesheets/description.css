@@ -54,6 +54,12 @@
   height: 42px;
   text-align: start;
 }
+
+.ddm-toggle > div p::after {
+  content: url(../images/caret-down.svg);
+  height: 16px;
+  width: 16px;
+}
 .ddm-container {
   width: 356px;
   background-color: #f8f8f8;
