@@ -41,43 +41,47 @@ matches found >>> products >>> x/matches viewed , load button -->
   </div>
 </div>
 <!-- filters -->
-<div class="dropdown">
-  <button class="btn ddm-toggle border-bottom border-top" type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
-    <div class="d-flex justify-content-between">
-      <p>Sort</p>
-    </div>
-
-  </button>
-  <div class="dropdown-menu p-0 ddm-container" aria-labelledby="dropdownMenu">
-    <div class="ddm-header">
-      <div class="d-flex justify-content-between p-2">
-        <div>
-          <p>0 selected</p>
+<div class="ddm-bg">
+  <div class="dropdown ddm-wrapper py-2 border-top d-flex gap-3 flex-wrap">
+    <% for(let i=0; i<12; i++){ %>
+    <button id="dropdown-button<%= i%>" class="btn ddm-toggle border-bottom border-top" type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+      <div class="d-flex justify-content-between">
+        <span>Sort</span> <span class="" id="arrow-icon<%= i%>"><i class="bi bi-caret-down"></i></span>
+      </div>
+    </button>
+    <div class="dropdown-menu p-0 ddm-container" aria-labelledby="dropdownMenu">
+      <div class="ddm-header">
+        <div class="d-flex justify-content-between p-2">
+          <div>
+            <p>0 selected</p>
+          </div>
+          <button class="btn btn-primary me-2">ALL</button>
         </div>
-        <button class="btn btn-primary me-2">ALL</button>
+        <div class="d-flex justify-content-center w-75 mx-0">
+          <input type="text" class="rounded-pill px-3 w-100">
+        </div>
       </div>
-      <div class="d-flex justify-content-center w-75 mx-0">
-        <input type="text" class="rounded-pill px-3 w-100">
+      <div class="ddm-list">
+        <ul class="">
+          <li><label for="action" class="px-3 w-100">
+              <div class="h-100 d-flex align-items-center"><span>Action</span></div>
+            </label>
+            <input type="checkbox" class="" href="#" id="action">
+          </li>
+          <li><label for="action" class="px-3 w-100">
+              <div class="h-100 d-flex align-items-center"><span>daniel</span></div>
+            </label>
+            <input type="checkbox" class="" href="#" id="action">
+          </li>
+          <li><label for="action" class="px-3 w-100">
+              <div class="h-100 d-flex align-items-center"><span>oded</span></div>
+            </label>
+            <input type="checkbox" class="" href="#" id="action">
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="ddm-list">
-      <ul class="">
-        <li><label for="action" class="px-3 w-100">
-            <div class="h-100 d-flex align-items-center"><span>Action</span></div>
-          </label>
-          <input type="checkbox" class="" href="#" id="action">
-        </li>
-        <li><label for="action" class="px-3 w-100">
-            <div class="h-100 d-flex align-items-center"><span>daniel</span></div>
-          </label>
-          <input type="checkbox" class="" href="#" id="action">
-        </li>
-        <li><label for="action" class="px-3 w-100">
-            <div class="h-100 d-flex align-items-center"><span>oded</span></div>
-          </label>
-          <input type="checkbox" class="" href="#" id="action">
-        </li>
-      </ul>
-    </div>
+    <% } %>
+
   </div>
 </div>

@@ -15,6 +15,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+.ddm-wrapper {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* banner and text */
 .category-banner-bg {
   background-color: #f8f8f8;
@@ -24,6 +29,9 @@
 }
 .category-buttons-bg {
   background-color: #fff;
+}
+.ddm-bg {
+  background-color: #eee;
 }
 /* buttons */
 .category-buttons-bg {
@@ -55,11 +63,10 @@
   text-align: start;
 }
 
-.ddm-toggle > div p::after {
-  content: url(../images/caret-down.svg);
-  height: 16px;
-  width: 16px;
+.dropdown button div .arrow-icon {
+  transform: translateY(-2px) rotate(180deg);
 }
+
 .ddm-container {
   width: 356px;
   background-color: #f8f8f8;
