@@ -42,7 +42,7 @@ matches found >>> products >>> x/matches viewed , load button -->
 </div>
 <!-- filters -->
 <div class="ddm-bg">
-  <div class="dropdown ddm-wrapper py-2 border-top d-flex gap-3 flex-wrap">
+  <div class="dropdown ddm-wrapper border-top d-flex flex-wrap">
     <% for(let i=0; i<12; i++){ %>
     <button id="dropdown-button<%= i%>" class="btn ddm-toggle border-bottom border-top" type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
       <div class="d-flex justify-content-between">
@@ -86,4 +86,29 @@ matches found >>> products >>> x/matches viewed , load button -->
   </div>
 </div>
 
-<div></div>
+<div class="products-bg">
+  <div class="products-wrapper">
+    <div class="products-found mt-3 ">
+      <p class="text-center">
+        xxx styles found
+      </p>
+    </div>
+    <!-- individual product -->
+    <div class="product d-flex flex-wrap mb-3 justify-content-center">
+      <% for(let j=0; j<9; j++){ %>
+      <a href="" class="product-container">
+        <div class="product-img">
+          <img src="https://images.asos-media.com/products/nike-air-max-95-essential-in-triple-white/202327772-1-white?$n_320w$&wid=317&fit=constrain" alt="">
+          <button class="product-img-heart p-0"><i class="bi bi-heart"></i></button>
+        </div>
+        <div class="product-desc">
+          <p class="">Nike Air Max 95 Essential in triple white</h2>
+        </div>
+        <div class="product-price">
+          <p class="fw-bold">154.95E</p>
+        </div>
+      </a>
+      <% } %>
+    </div>
+  </div>
+</div>

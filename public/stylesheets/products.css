@@ -20,6 +20,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+.products-wrapper {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* banner and text */
 .category-banner-bg {
   background-color: #f8f8f8;
@@ -33,7 +38,7 @@
 .ddm-bg {
   background-color: #eee;
 }
-/* buttons */
+/* pill buttons */
 .category-buttons-bg {
   color: #fff;
 }
@@ -57,10 +62,14 @@
   background-color: #d2d2d2;
 }
 /* drop down menu */
+.dropdown {
+  padding: 0 23px;
+}
 .ddm-toggle {
   width: 200px;
   height: 42px;
   text-align: start;
+  margin: 8px 20px 8px 0;
 }
 
 .dropdown button div .arrow-icon {
@@ -98,4 +107,40 @@
 
 .ddm-list ul li input {
   display: none;
+}
+
+/* products */
+
+.products-bg {
+  background-color: #fff;
+}
+.product {
+  gap: 0.75rem;
+}
+.product-container {
+  width: 317px;
+  height: 505px;
+  text-decoration: none;
+}
+.product-img {
+  position: relative;
+  margin-bottom: 9px;
+}
+.product-img-heart {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  border: none;
+}
+.product-desc {
+  color: #2d2d2d;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+.product-price {
+  color: #666;
+  font-size: 0.875rem;
 }
