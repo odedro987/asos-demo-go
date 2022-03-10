@@ -21,6 +21,10 @@ app.get('/products', (req, res) => {
   res.render('products');
 });
 
+app.get('/product', (req, res) => {
+  res.render('product');
+});
+
 app.get('*', (req, res) => {
   res.redirect('/home');
 });

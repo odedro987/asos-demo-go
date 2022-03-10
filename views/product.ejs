@@ -1,0 +1,97 @@
+<% layout('layout/boilerplate')%>
+
+<%- include ./partials/arrownav.ejs %>
+
+<div class="product-bg">
+  <div class="product-wrapper">
+    <!-- product -->
+    <div class="product-images-container d-flex justify-content-center">
+      <div class="product-side-images">
+        <ul class="product-side-images-list d-flex flex-column p-0 pe-2 gap-3">
+          <li><a href=""><img src="https://images.asos-media.com/products/nike-air-max-95-essential-in-triple-white/202327772-1-white?$n_240w$&wid=40&fit=constrain" alt=""></a></li>
+          <li><a href=""><img src="https://images.asos-media.com/products/nike-air-max-95-essential-in-triple-white/202327772-2?$n_240w$&wid=40&fit=constrain" alt=""></a></li>
+          <li><a href=""><img src="https://images.asos-media.com/products/nike-air-max-95-essential-in-triple-white/202327772-3?$n_240w$&wid=40&fit=constrain" alt=""></a></li>
+          <li><a href=""><img src="https://images.asos-media.com/products/nike-air-max-95-essential-in-triple-white/202327772-4?$n_240w$&wid=40&fit=constrain" alt=""></a></li>
+          <li class="mt-auto"><button><span class="text-center"><i class="bi bi-upload"></i></span></button></li>
+        </ul>
+      </div>
+      <!-- carousel -->
+      <div class="product-main-image-carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://images.asos-media.com/products/nike-air-max-95-essential-in-triple-white/202327772-1-white?$n_640w$&wid=513&fit=constrain" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.asos-media.com/products/nike-air-max-95-essential-in-triple-white/202327772-2?$n_640w$&wid=513&fit=constrain" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.asos-media.com/products/nike-air-max-95-essential-in-triple-white/202327772-3?$n_640w$&wid=513&fit=constrain" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.asos-media.com/products/nike-air-max-95-essential-in-triple-white/202327772-4?$n_640w$&wid=513&fit=constrain" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- product info -->
+      <div class="product-info d-flex flex-column justify-content-start ps-5 mt-4">
+        <div class="product-title">
+          <p>Nike Air Max 95 Essential in triple white</p>
+        </div>
+        <div class="product-price">
+          <p>£154.95</p>
+        </div>
+        <div>COLOUR: White</div>
+        <div>
+          <label for="size-select">SIZE:</label>
+        </div>
+        <div>
+          <select class="form-select" id="size-select" aria-label="Default select example">
+            <option selected>Please select</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div><button>ADD TO BAG</button><button><span><i class="bi bi-heart"></i></span></button></div>
+        <div>
+          <div>delivery</div>
+          <div>tsc</div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- about product 
+    <div>
+      <ul></ul>
+    </div>
+     you might like 
+    <div>
+      <p></p>
+      <div>
+        products
+      </div>
+    </div>
+     buy the look
+    <div>bg
+      <div>wrapper
+        ~~~
+      </div>
+    </div>
+     recently viewed 
+    <div></div> -->
+
+  </div>
+</div>
