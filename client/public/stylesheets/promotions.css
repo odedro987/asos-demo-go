@@ -1,0 +1,22 @@
+.promotion--light {
+  background-color: rgb(156, 240, 224);
+  font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+}
+.promotion--dark {
+  background-color: black;
+  font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+}
+
+.promotion--light a {
+  color: black;
+  font-weight: 700;
+  padding: 0.75rem 0;
+}
+.promotion--dark a {
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem 0;
+}
+.promotion-terms {
+  font-size: 0.75rem;
+}
