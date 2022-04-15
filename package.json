@@ -1,0 +1,21 @@
+{
+  "name": "asos-demo-go",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db": "C:\\\"Program Files\"\\MongoDB\\Server\\5.0\\bin\\mongod.exe --dbpath=\"c:\\Mongo\\data\\db\"",
+    "server": "go run .\\server\\cmd\\asos\\main.go",
+    "client": "nodemon .\\client\\app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odedro987/asos-demo-go.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/odedro987/asos-demo-go/issues"
+  },
+  "homepage": "https://github.com/odedro987/asos-demo-go#readme"
+}
