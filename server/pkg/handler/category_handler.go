@@ -21,8 +21,8 @@ func CreateCategoriesHandler(r *mux.Router) {
 func mainCategoryRoutes(r *mux.Router) {
 	s := r.PathPrefix(CategoriesPrefix).Subrouter()
 
-	s.HandleFunc("/", findAll).Methods("GET")
-	s.HandleFunc("/", addCategory).Methods("POST")
+	s.HandleFunc("", findAll).Methods("GET")
+	s.HandleFunc("", addCategory).Methods("POST")
 }
 
 func addCategory(w http.ResponseWriter, r *http.Request) {

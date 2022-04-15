@@ -18,7 +18,7 @@ func CreateItemHandler(r *mux.Router) {
 func mainItemRoutes(r *mux.Router) {
 	s := r.PathPrefix(ItemPrefix).Subrouter()
 
-	s.HandleFunc("/", findAllItems).Methods("GET")
+	s.HandleFunc("", findAllItems).Methods("GET")
 	s.HandleFunc("/{id}", findItemById).Methods("GET")
 	s.HandleFunc("/{brand}", findItemsByBrand).Methods("GET")
 	s.HandleFunc("/{category}", findItemsByCategory).Methods("GET")
